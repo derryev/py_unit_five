@@ -4,4 +4,18 @@ def multiplication_table(number):
     :param number: An integer
     :return: A string of 12 values representing the mulitiplication table of the parameter number.
     """
-    pass # Make sure to delete this line when writing your function.
+    test = ""
+    for x in range (13):
+        x
+    return test
+
+
+
+
+
+def main():
+    number = float(input("What number do you want a multiplication table of?"))
+    print(multiplication_table(number))
+
+
+main()
