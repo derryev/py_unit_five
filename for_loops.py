@@ -9,7 +9,18 @@ def count(first, last):
     :param second: The final number. Must be included
     :return: A string containing the numbers
     """
-    pass # make sure to delete this line when you write your own function
+    test = ""
+
+    if first<last:
+        for x in range(first,last+1):
+            test += str(x)
+    elif last<first:
+        for x in range(last,first-1):
+            test -= str(x)
+            print(test)
+    else:
+        test = "You cannot count up or down when both numbers are the same!"
+    print(test)
 
 
 def main():
