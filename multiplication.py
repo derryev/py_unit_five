@@ -5,11 +5,9 @@ def multiplication_table(number):
     :return: A string of 12 values representing the mulitiplication table of the parameter number.
     """
     test = ""
-    for x in range (13):
-        x
+    for x in range(1,13):
+        test += str(number*x) + ", "
     return test
-
-
 
 
 
