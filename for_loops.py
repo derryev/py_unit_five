@@ -12,19 +12,18 @@ def count(first, last):
     test = ""
 
     if first<last:
-        for x in range(first,last+1):
-            test += str(x)
+        for x in range(first,last +1):
+            test += str(x) + " "
     elif last<first:
-        for x in range(last,first-1):
-            test -= str(x)
-            print(test)
+        for x in range(last+1,first+1):
+            test += str(x-1) + " "
     else:
-        test = "You cannot count up or down when both numbers are the same!"
+        test = "Error"
     print(test)
 
 
 def main():
-    print(count(0, 6))
+    count(6, 1)
 
 
 if __name__ == '__main__':
