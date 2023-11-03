@@ -12,7 +12,7 @@ def get_input():
     return user_choice
 
 def main():
-    print(get_input())
+    print("You chose "+str(get_input()))
 
 
 if __name__ == '__main__':
