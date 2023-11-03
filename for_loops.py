@@ -11,19 +11,19 @@ def count(first, last):
     """
     test = ""
 
-    if first<last:
+    if first < last:
         for x in range(first,last +1):
             test += str(x) + " "
-    elif last<first:
-        for x in range(last+1,first+1):
-            test += str(x-1) + " "
+    elif first > last:
+        for x in range(first, last-1, -1):
+            test += str(x) + " "
     else:
         test = "Error"
-    print(test)
+    return test
 
 
 def main():
-    count(6, 1)
+    print(count(6, 1))
 
 
 if __name__ == '__main__':
