@@ -35,7 +35,7 @@ def tell_average(average_score, total_count):
         return ("Wow! That was a great game. Your total score is "+str(average_score)+", which means that you averaged "
                 +str(average_score)+" guesses per game! You made a total of "+str(total_count)+" guesses.")
     elif 5< average_score<= 20:
-        return ("You did pretty well. Your total score is" + str(average_score) + ", which means that you averaged "
+        return ("You did pretty well. Your total score is " + str(average_score) + ", which means that you averaged "
               + str(average_score) + " guesses per game! You made a total of " + str(total_count) + " guesses.")
     else:
         return("That game was PRETTY rough. Your total score is " + str(average_score) + ", because you averaged "
@@ -44,10 +44,13 @@ def tell_average(average_score, total_count):
 
 def main():
     total_count = 0
+    round_count =0
     for x in range(3):
+        round_count += 1
         counter = 1
         number = get_number()
         #print(number)
+        print("Round "+str(round_count)+"!")
         guess = get_guess()
         while number != guess:
             give_feedback(number, guess)
