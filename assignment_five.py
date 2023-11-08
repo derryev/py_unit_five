@@ -60,11 +60,11 @@ def tell_average(average_score, total_count):
                 +str(average_score)+" guesses per game! You made a total of "+str(total_count)+" guesses.")
     elif 5< average_score<= 20:
         return ("You did pretty well. Your total score is " + str(average_score) + ", which means that you averaged "   # if the average score was from 6-20 points, the user gets a less enthusiastic but still positive message
-              + str(average_score) + " guesses per game! You made a total of " + str(total_count) + " guesses.")          #when being told their average score and total guesses
+              + str(average_score) + " guesses per game! You made a total of " + str(total_count) + " guesses.")            #when being told their average score and total guesses
     else:
         return("That game was PRETTY rough. Your total score is " + str(average_score) + ", because you averaged "      # if the average score was higher than 20 points, the user gets a playful message about how terribly they did
-              + str(average_score) + " guesses per game. You made a total of " + str(total_count) + "guesses..."            # when being told their average score and total guesses
-               "Don't worry -  I bet you'll do better next time!")
+              + str(average_score) + " guesses per game. You made a total of " + str(total_count) + " guesses..."           # when being told their average score and total guesses
+               "Don't worry..  I bet you'll do better next time!")
 
 
 def main():
