@@ -69,7 +69,7 @@ def tell_average(average_score, total_count):
 
 def main():
     print("Welcome to the guessing game! There are three rounds, in each of which you will try to guess a number I "
-          "came up with from 1 to 100 in as few tries as possible. Let's begin")
+          "came up with from 1 to 100 in as few tries as possible.")
     total_count = 0
     round_count =0
     for x in range(3):
